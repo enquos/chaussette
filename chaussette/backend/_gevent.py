@@ -19,7 +19,7 @@ class Server(WSGIServer):
     handler_class = CustomWSGIHandler
 
     def __init__(self, listener, application=None, backlog=None,
-                 spawn='default', log='default', handler_class=None,
+                 spawn='default', log=None, handler_class=None,
                  environ=None, socket_type=None, address_family=None,
                  graceful_timeout=None, **ssl_args):
         if address_family:
